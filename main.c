@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "functions.h"
+#include "functions.h" // Include user-defined functions header file
 
 // Arrays to store student information
 const int n = 10;    

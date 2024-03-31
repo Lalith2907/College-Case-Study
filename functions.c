@@ -22,6 +22,7 @@ void Subjects(char sub[3][50]) {
         printf("Enter subject %d: ", i + 1);
         scanf("%s", sub[i]);
     }
+    printf("-----------------------------------------------------------\n");
 }
 
 // Function to input subject credits
