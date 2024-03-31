@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Function to input student information
 void studentinfo(char name[][50], int roll[], int sem[], long int contact[], int x) {
     for (int i = 0; i < x; i++) {
         printf("===============    Data of Student %d    ===============\n", i + 1);
@@ -15,6 +16,7 @@ void studentinfo(char name[][50], int roll[], int sem[], long int contact[], int
     printf("-----------------------------------------------------------\n");
 }
 
+// Function to input subject names
 void Subjects(char sub[3][50]) {
     for (int i = 0; i < 3; i++) {
         printf("Enter subject %d: ", i + 1);
@@ -22,6 +24,7 @@ void Subjects(char sub[3][50]) {
     }
 }
 
+// Function to input subject credits
 void Credits(int credit[3]) {
     for (int i = 0; i < 3; i++) {
         printf("Enter credits of subject %d: ", i + 1);
@@ -30,6 +33,7 @@ void Credits(int credit[3]) {
     printf("-----------------------------------------------------------\n");
 }
 
+// Function to input ISA1 marks
 void ISA1(int isa1[][3], int x) {
     for (int i = 0; i < x; i++) {
         printf("Enter marks of subjects of student %d for ISA1: ", i + 1);
@@ -38,6 +42,7 @@ void ISA1(int isa1[][3], int x) {
     printf("-----------------------------------------------------------\n");
 }
 
+// Function to input ISA2 marks
 void ISA2(int isa2[][3], int x) {
     for (int i = 0; i < x; i++) {
         printf("Enter marks of subjects of student %d for ISA2: ", i + 1);
@@ -46,6 +51,7 @@ void ISA2(int isa2[][3], int x) {
     printf("-----------------------------------------------------------\n");
 }
 
+// Function to input ESA marks
 void ESA(int esa[][3], int x) {
     for (int i = 0; i < x; i++) {
         printf("Enter marks of subjects of student %d for ESA: ", i + 1);
@@ -54,6 +60,7 @@ void ESA(int esa[][3], int x) {
     printf("-----------------------------------------------------------\n");
 }
 
+// Function to calculate total marks
 void Marks_Data(float marks[][3], int isa1[][3], int isa2[][3], int esa[][3], int x)
 {
     for(int i = 0; i < x; i++)
@@ -65,6 +72,7 @@ void Marks_Data(float marks[][3], int isa1[][3], int isa2[][3], int esa[][3], in
     }
 }
 
+// Function to calculate SGPA
 void SGPA(float marks[][3], int credits[3], int x, float sgpa[])
 {
     int total = 0;
@@ -110,6 +118,7 @@ void SGPA(float marks[][3], int credits[3], int x, float sgpa[])
     }
 }
 
+// Function to print gradecard
 void gradecard(char name[][50], int roll[], int sem[], long int contact[], char sub[3][50], int isa1[][3], int isa2[][3], int esa[][3], float marks[][3], float sgpa[], int x) {
     int input;
     printf("Choose whose grade card you want to be printed (1 to %d):\n", x);
