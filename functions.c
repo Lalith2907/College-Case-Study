@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Function to input student information
-void studentinfo(char name[][50], int roll[], int sem[], long int contact[], int x) {
+void studentinfo(char name[][50], int roll[], int sem[], long long int contact[], int x) {
     for (int i = 0; i < x; i++) {
         printf("===============    Data of Student %d    ===============\n", i + 1);
         printf("Enter name: ");
@@ -11,7 +11,7 @@ void studentinfo(char name[][50], int roll[], int sem[], long int contact[], int
         printf("Enter semester: ");
         scanf("%d", &sem[i]);
         printf("Enter contact number: ");
-        scanf("%ld", &contact[i]);
+        scanf("%lld", &contact[i]);
     }
     printf("-----------------------------------------------------------\n");
 }
@@ -89,7 +89,7 @@ void SGPA(float marks[][3], int credits[3], int x, float sgpa[])
             if (marks[i][j] > 90) 
             {
                 sgpa[i] += 10 * credits[j]; 
-            } 
+            }
             else if (marks[i][j] > 80 && marks[i][j] <= 90) 
             {
                 sgpa[i] += 9 * credits[j]; 
@@ -120,7 +120,7 @@ void SGPA(float marks[][3], int credits[3], int x, float sgpa[])
 }
 
 // Function to print gradecard
-void gradecard(char name[][50], int roll[], int sem[], long int contact[], char sub[3][50], int isa1[][3], int isa2[][3], int esa[][3], float marks[][3], float sgpa[], int x) {
+void gradecard(char name[][50], int roll[], int sem[], long long int contact[], char sub[3][50], int isa1[][3], int isa2[][3], int esa[][3], float marks[][3], float sgpa[], int x) {
     int input;
     printf("Choose whose grade card you want to be printed (1 to %d):\n", x);
     for (int i = 0; i < x; i++) 

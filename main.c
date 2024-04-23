@@ -4,7 +4,7 @@
 // Arrays to store student information
 const int n = 10;    
 char name[10][50], sub[3][50];   
-long int contact[10];   
+long long int contact[10];   
 int rollno[10], sem[10], credit[3], isa1[10][3], isa2[10][3], esa[10][3];  
 float marks[10][3], sgpa[10];   
 
